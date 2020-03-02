@@ -1,0 +1,22 @@
+<html>
+<head>
+<title>Button changing text</title>
+<script>
+ function mybtn()
+   {
+    var elem = document.getElementById("btnmagic");
+      if (elem.value=="Mon") {elem.value = "Tues";}
+	  else if (elem.value=="Sun") {elem.value = "Mon";}
+	  else if (elem.value=="Tues") {elem.value = "Wed";}
+      else if (elem.value=="Wed") {elem.value = "Thurs";}
+      else if (elem.value=="Thurs") {elem.value = "Fri";}
+      else if (elem.value=="Fri") {elem.value = "Sat";}
+      else {elem.value="Sun";}
+   }
+</script>
+<head>
+<body>
+ <input type="text" value="Mon" id="btnmagic">
+ <button class="mybtn" onclick="mybtn()" ><b>Press</b></button>
+</body>
+</html>
